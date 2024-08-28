@@ -1,8 +1,12 @@
+
+
 public class Produto {
   private int codProduto;
   private String nomeProduto;
   private double valorProduto;
   private int quantidadeProduto;
+  private static int quantidadeTotal = 0;
+  private static final int estoqueMinimo = 5;
 
   public Produto() {}
 
@@ -67,4 +71,21 @@ public class Produto {
       return false;
     }
   }
+
+  public void verificaEstoqueSeguranca(){
+
+  }
+
+  public void gerarPedidoCompra(){
+    
+  }
+
+  @Override
+  public String toString() {
+    return "Produto [codProduto=" + codProduto + ", nomeProduto=" + nomeProduto + ", valorProduto=" + valorProduto
+        + ", quantidadeProduto=" + quantidadeProduto + "]";
+  }
+
+  
+  
 }

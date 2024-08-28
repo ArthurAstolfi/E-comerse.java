@@ -1,7 +1,11 @@
+
+import java.util.ArrayList;
+
 public class Clientes {
   private int codClientes;
   private String nome;
   private String cpf;
+  private ArrayList<Clientes> clientes = new ArrayList<>();
 
   public Clientes() {}
 
@@ -34,4 +38,11 @@ public class Clientes {
   public void setCpf(String cpf) {
     this.cpf = cpf;
   }
+
+  @Override
+  public String toString() {
+    return "Clientes [codClientes=" + codClientes + ", nome=" + nome + ", cpf=" + cpf + ", clientes=" + clientes + "]";
+  }
+
+  
 }

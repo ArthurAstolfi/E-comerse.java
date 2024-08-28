@@ -1,6 +1,10 @@
+
+import java.util.ArrayList;
+
 public class Orcamento {
   private int codOrcamento;
   private double valorTotal;
+  private ArrayList <Orcamento> orcamentos = new ArrayList<>();
 
   public Orcamento() {}
 

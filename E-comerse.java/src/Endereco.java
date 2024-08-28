@@ -1,3 +1,6 @@
+
+import java.util.ArrayList;
+
 public class Endereco {
   private int codEndereco;
   private String logradouro;
@@ -7,6 +10,7 @@ public class Endereco {
   private int cep;
   private String cidade;
   private String estado;
+  private ArrayList<Endereco> Endereco = new ArrayList<>();
 
   public Endereco() {}
 
@@ -92,4 +96,13 @@ public class Endereco {
   public void setEstado(String estado) {
     this.estado = estado;
   }
+
+  @Override
+  public String toString() {
+    return "Endereco [codEndereco=" + codEndereco + ", logradouro=" + logradouro + ", numero=" + numero + ", completo="
+        + completo + ", bairro=" + bairro + ", cep=" + cep + ", cidade=" + cidade + ", estado=" + estado + ", Endereco="
+        + Endereco + "]";
+  }
+
+  
 }

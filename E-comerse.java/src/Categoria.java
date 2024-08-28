@@ -1,7 +1,11 @@
+
+import java.util.ArrayList;
+
 public class Categoria {
   private int codCategoria;
   private String nomeCategoria;
   private String departamento;
+  private ArrayList<Produto> produtos = new ArrayList<>();
 
   public Categoria() {}
 
@@ -34,4 +38,12 @@ public class Categoria {
   public void setDepartamento(String departamento) {
     this.departamento = departamento;
   }
+
+  @Override
+  public String toString() {
+    return "Categoria [codCategoria=" + codCategoria + ", nomeCategoria=" + nomeCategoria + ", departamento="
+        + departamento + ", produtos=" + produtos + "]";
+  }
+
+  
 }
